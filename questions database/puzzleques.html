@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <link href="../question format/Question.css" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <h1>Aptitude Quiz</h1>
+        <div class="quiz">
+            <h3 id="question">Question</h3>
+            <div id="answer-buttons">
+                <button class="btn">Answer1</button>
+                <button class="btn">Answer2</button>
+                <button class="btn">Answer3</button>
+                <button class="btn">Answer4</button>
+            </div>
+            <button id="next-btn">Next</button>
+        </div>
+    </div>
+    <script >
+
+const questions = [
+    {
+        question: "I speak without a mouth and hear without ears. I have no body, but I come alive with the wind. What am I?",
+        answers: [
+            { text: "Whistle", correct: true },
+            { text: "Echo", correct: false },
+            { text: "Bird", correct: false },
+            { text: "River", correct: false },
+        ]
+    },
+    {
+        question: "What comes once in a minute, twice in a moment, but never in a thousand years?",
+        answers: [
+            { text: "Letter 'm'", correct: true },
+            { text: "Number '1'", correct: false },
+            { text: "Word 'time'", correct: false },
+            { text: "Word 'always'", correct: false },
+        ]
+    },
+    {
+        question: "I have keys but open no locks. I have space but no room. You can enter, but you can't go outside. What am I?",
+        answers: [
+            { text: "Computer", correct: false },
+            { text: "Keyboard", correct: true },
+            { text: "Book", correct: false },
+            { text: "Clock", correct: false },
+        ]
+    },
+    {
+        question: "What has a heart that doesn't beat?",
+        answers: [
+            { text: "Bird", correct: false },
+            { text: "Artichoke", correct: true },
+            { text: "Flower", correct: false },
+            { text: "Machine", correct: false },
+        ]
+    },
+    {
+        question: "I am taken from a mine, and shut up in a wooden case, from which I am never released, and yet I am used by almost every person. What am I?",
+        answers: [
+            { text: "Gold", correct: false },
+            { text: "Diamond", correct: false },
+            { text: "Pencil lead", correct: true },
+            { text: "Ink", correct: false },
+        ]
+    },
+    {
+        question: "What has an eye but cannot see?",
+        answers: [
+            { text: "Camera", correct: true },
+            { text: "Fish", correct: false },
+            { text: "Tornado", correct: false },
+            { text: "Hurricane", correct: false },
+        ]
+    },
+    {
+        question: "What has keys but can't open locks?",
+        answers: [
+            { text: "Piano", correct: true },
+            { text: "Keyboard", correct: false },
+            { text: "Treasure chest", correct: false },
+            { text: "Map", correct: false },
+        ]
+    },
+    {
+        question: "I am taken from a mine and shut up in a wooden case, from which I am never released, and yet I am used by many. What am I?",
+        answers: [
+            { text: "Diamond", correct: false },
+            { text: "Air", correct: true },
+            { text: "Gold", correct: false },
+            { text: "Gas", correct: false },
+        ]
+    },
+    {
+        question: "The more you take, the more you leave behind. What am I?",
+        answers: [
+            { text: "Footsteps", correct: true },
+            { text: "Breath", correct: false },
+            { text: "Air", correct: false },
+            { text: "Thoughts", correct: false },
+        ]
+    },
+    {
+        question: "What has a head, a tail, but no body?",
+        answers: [
+            { text: "Coin", correct: true },
+            { text: "Snake", correct: false },
+            { text: "Fish", correct: false },
+            { text: "Lizard", correct: false },
+        ]
+    },
+];
+    </script>
+    <script src="../questions database/function.js"></script>
+</html> 
